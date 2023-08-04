@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- nav -->
+    <nav>
+        <a href="image.html">Image Search</a>
+        <a href="advanced.html">Advanced Search</a>
+    </nav>
+
+    <!-- main -->
+    <main>
+        <!-- google's image -->
+        <div id="google_container">
+            <img src="img/google.png" alt="">
+        </div>
+        
+        <!-- search -->
+        <form action="https://www.google.com/search">
+            <div id="search_bar_container">
+                <input id="search_bar" type="text" name="q" autofocus autocomplete="off">
+            </div>
+
+            <div id="search_buttons">
+                <input type="submit" value="Google Search">
+                <input id="lucky" type="submit" value="I'm feeling lucky">
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>

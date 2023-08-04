@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Images</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('#images_txt').style.width =
+            document.querySelector('#img_container').offsetWidth + 'px';
+        })
+    </script>
+</head>
+<body>
+    <!-- nav -->
+    <nav>
+        <a href="index.html">Google Search</a>
+        <a href="advanced.html">Advanced Search</a>
+    </nav>
+
+    <!-- main -->
+    <main>
+        <!-- google's image -->
+        <div id="google_image_container">
+            <div id="img_container">
+                <img id="img" src="img/google.png" alt="">
+            </div>
+            <div id="images_txt">
+                <span>Images</span>
+            </div>
+        </div>
+
+        
+        <!-- search -->
+        <form action="https://www.google.com/search">
+            <div id="search_bar_container">
+                <input id="search_bar" type="text" name="q" autofocus autocomplete="off">
+            </div>
+
+            <div id="search_buttons">
+                <input type="submit" value="Google Search">
+                <input type="hidden" name="tbm" value="isch">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

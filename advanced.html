@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="advanced.css">
+</head>
+<body>
+    <!-- nav -->
+    <nav>
+        <a href="index.html">Google Search</a>
+        <a href="image.html">Google Images</a>
+    </nav>
+
+    <!-- Content -->
+    <h2>Advanced Search</h3>
+
+    <form action="https://www.google.com/search">
+        <h3>Search for pages with...</h3>
+
+        <div class="criteria">
+            <span>All these words:</span>
+            <input autocomplete="off" type="text" name="as_q">
+        </div>
+        <div class="criteria">
+            <span>This exact word or expression:</span>
+            <input autocomplete="off" type="text" name="as_epq">
+        </div>
+        <div class="criteria">
+            <span>One of these words:</span>
+            <input autocomplete="off" type="text" name="as_oq">
+        </div>
+        <div class="criteria">
+            <span>Without any of these words:</span>
+            <input autocomplete="off" type="text" name="as_eq">
+        </div>
+
+        <div id="search">
+            <input type="submit" value="Advanced Search">
+        </div>
+        
+
+    </form>
+</body>
+</html>
